@@ -1,2 +1,3 @@
 netmiko
 numpy
+ansible==2.9.27
