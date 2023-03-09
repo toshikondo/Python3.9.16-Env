@@ -2,7 +2,10 @@ version: '3'
 
 services:
   python3.9.16-env:
-    build: ./docker/
+    build: 
+      context: ./docker/
+      args:
+        PASSWD: mypassword
     ports:
       - '51022:22'
     volumes:
